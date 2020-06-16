@@ -1,6 +1,8 @@
 <!doctype html>
 <title>{% block title %}{% endblock %} - Calender</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='blog.css') }}">
+
+
 <nav>
   <h1><a href="{{ url_for('index') }}">Calender</a></h1>
   <ul>
@@ -13,7 +15,7 @@
     {% endif %}
   </ul>
 </nav>
-<section class="content">
+<main role="main" class="content">
   <header>
     {% block header %}{% endblock %}
   </header>
@@ -21,5 +23,4 @@
     <div class="flash">{{ message }}</div>
   {% endfor %}
   {% block content %}{% endblock %}
-</section>
-
+</main>
