@@ -1,7 +1,30 @@
 body {
-  padding-top: 5rem;
+  padding-top: 10rem;
 }
 .starter-template {
-  padding: 3rem 1.5rem;
+  padding: 30px 1.5rem;
   text-align: center;
 }
+/*書きこ日時 size\*/
+.post > header { display: flex; align-items: flex-end; font-size: 0.85em; }
+/*post tittle size*/
+.post > header h1 { font-size: 3.5em; margin-bottom: 0; }
+/* tittle & date color*/
+h1 { font-family: serif; color: #37a99e; margin: 1rem 0; }
+/* left hitbox  high calenders right position? */
+nav h1 a { text-decoration: none; padding: 0.25rem 45rem; }
+
+nav ul  { display: flex; list-style: none; margin: 0; padding: 0; }
+
+
+nav ul li a, nav ul li span, header .action { display: block; padding: 0.5rem; }
+
+P { text-align: center }
+
+.padding{
+    border: 1px solid #aaa;
+    padding: 20px 40px;
+}
+<div class="padding">
+    padding
+</div>

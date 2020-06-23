@@ -4,13 +4,24 @@
 {% block header %}
   <h1>{% block title %}2020/6/01{% endblock %}</h1>
   {% if g.user %}
+
     <a class="action" href="{{ url_for('blog.create',date='20200601') }}">New</a>
   {% endif %}
 {% endblock %}
 
+
+<hr>
+<hr>
+<hr>
+<div class="centering_parent">
+    <span class="centering_item">
+
+
+
 {% block content %}
   {% for post in posts %}
 {% if post['date']=="20200601" %}
+<hr>
     <article class="post">
         <header>
 
@@ -762,6 +773,10 @@
     {% if not loop.last %}
       {% endif %}
   {% endfor %}
+
+</span>
+</div>
+
 
 <hr>
 {% endblock %}

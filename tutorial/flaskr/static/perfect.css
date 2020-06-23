@@ -1,0 +1,26 @@
+/* Show it's not fixed to the top */
+body {
+  min-height: 7500rem;
+  　　background-color: #9370db;
+}
+
+/*書きこ日時 size\*/
+.post > header { display: flex; align-items: flex-end; font-size: 0.85em; }
+/*post tittle size*/
+.post > header h1 { font-size: 3.5em; margin-bottom: 0; }
+/* tittle & date color
+h1 { font-family: serif; color: #37a99e; margin: 1rem 0; }
+
+*/
+p{font-size:20px;
+color:red;}
+
+h1{font-size:20px;
+color:#37a99e;}
+
+/*
+h1{
+  margin:0 auto;
+  background:#ffff00;
+}
+*/
